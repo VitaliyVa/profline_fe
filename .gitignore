@@ -1,0 +1,29 @@
+
+settings.ini
+db.sqlite3
+.vscode
+.env
+.venv
+venv/
+ENV/
+env/
+
+
+media/*
+!media/shurup
+
+# migrations
+# migrations/
+# **/migrations/
+# **/migrations/*
+# **/migrations/**
+# !**/migrations
+# !**/migrations/__init__.py
+__pycache__
+__pycache__/
+**/__pycache__/**
+!**/__pycache__
+*.pyc
+.pyc 
+static_root/
+node_modules

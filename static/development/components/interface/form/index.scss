@@ -1,0 +1,153 @@
+  // modal
+  .true_form {
+    position: absolute;
+    z-index: 9999;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    padding: 0;
+    width: 500px;
+    height: 250px;
+    background: #fff !important;
+    min-width: unset;
+    text-align: center;
+    min-height: unset;
+  }
+  
+  .form_true_img {
+    margin-top: 35px;
+    width: 100px;
+  }
+
+textarea {
+  resize: none;
+}
+.modal_form {
+    width: 565px;
+    padding: 32px;
+    background-color: #fff;
+}
+
+.fancybox-slide--html .fancybox-close-small {
+  color: currentColor;
+  padding: 0px;
+  right: 22px;
+  top: 26px;
+}
+.error {
+    color: red;
+    font-size: 13px;
+    position: relative !important;
+    padding-top: 3px;
+}
+
+
+.form {
+  &_title {
+    margin-bottom: 25px;
+  }
+}
+
+
+.input {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  background: #FFFFFF;
+  border: 1px solid #8C8C8C;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 14px 17px;
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 17px;
+
+      textarea:-moz-placeholder { 
+        color: #ACACAC; 
+      }
+      textarea::-webkit-input-placeholder { 
+        color: #ACACAC; 
+      }
+      input::-webkit-input-placeholder {
+        color: #ACACAC;
+      } 
+      input::-moz-placeholder {
+        color: #ACACAC;
+      }
+      input:-webkit-autofill {
+        -webkit-box-shadow: inset 0 0 0 50px #fff !important; /* Цвет фона */
+        -webkit-text-fill-color: #000 !important; /* цвет текста */
+        color: #000 !important; /* цвет текста */
+    }
+  }
+  &_label {
+    margin-bottom: 10px;
+  }
+  &_btn {
+    width: 100% !important;
+    margin-top: 30px;
+
+  }
+  &_required {
+    position: relative;
+
+    &::after {
+      content: '*';
+      position: relative;
+      top: 0;
+      left: 3px;
+      color: #ab2020;
+    }
+  }
+}
+
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+.last_registery {
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  &_link {
+    transition: all .2s;
+    cursor: pointer;
+    padding-bottom: 3px;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-bottom: 1px solid #F28820;
+    }
+  }
+  &_text {
+    margin-right: 20px;
+  }
+}
+
+.message {
+    resize: none;
+    outline: none;
+    height: 150px;
+}
+
+
+
+@media (max-width: 380px) {
+  .modal_form {
+    padding: 20px;
+  }
+}
